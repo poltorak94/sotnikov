@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/select2/css/select2.min.css"
+        />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <title>РАСПИСАНИЕ</title>
+    </head>
+    <body>
+        <secion class="cats">
+            <div class="cats__title-container">
+                <div class="cats-container">
+                    <div class="cats__title">РАСПИСАНИЕ</div>
+                </div>
+            </div>
+            <div class="cats__branches cats-container">
+                <div class="cats__branches-title">ВЫБЕРИТЕ ФИЛИАЛ:</div>
+                <div class="cats__branches-items">
+                    <a href="#" class="cats__branches-item">
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ВЕТЕРИНАРНАЯ КЛИНИКА
+                            </div>
+                            <div class="cats__branches-item-address">
+                                УЛИЦА РЕПИЩЕВА, 13/1
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">
+                            СЕВЕР (КОЛОМЯГИ)
+                        </div>
+                    </a>
+                    <a href="#" class="cats__branches-item">
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ВЕТЕРИНАРНАЯ КЛИНИКА
+                            </div>
+                            <div class="cats__branches-item-address">
+                                ПРОСПЕКТ НАРОДНОГО ОПОЛЧЕНИЯ, 19/1
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">
+                            ЮГО-ЗАПАД (ДАЧНОЕ)
+                        </div>
+                    </a>
+                    <a href="#" class="cats__branches-item">
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ВЕТЕРИНАРНАЯ КЛИНИКА
+                            </div>
+                            <div class="cats__branches-item-address">
+                                УЛИЦА БУХАРЕСТСКАЯ, 122/2
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">ЮГ (КУПЧИНО)</div>
+                    </a>
+                    <a href="#" class="cats__branches-item">
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ВЕТЕРИНАРНАЯ КЛИНИКА
+                            </div>
+                            <div class="cats__branches-item-address">
+                                ШОССЕ ПАВЛОВСКОЕ, 101
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">ПУШКИН</div>
+                    </a>
+                    <a
+                        href="#"
+                        class="cats__branches-item cats__branches-item--green"
+                    >
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ЦЕНТР ВЕТЕРИНАРНОЙ МРТ
+                            </div>
+                            <div class="cats__branches-item-address">
+                                УЛИЦА МАРШАЛА НОВИКОВА, 41
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">
+                            СЕВЕР (КОЛОМЯГИ)
+                        </div>
+                    </a>
+                    <a
+                        href="#"
+                        class="cats__branches-item cats__branches-item--green"
+                    >
+                        <div class="cats__branches-item-group">
+                            <div class="cats__branches-item-title">
+                                ЦЕНТР ВЕТЕРИНАРНОЙ МРТ
+                            </div>
+                            <div class="cats__branches-item-address">
+                                ПРОСПЕКТ НАРОДНОГО ОПОЛЧЕНИЯ, 19/1
+                            </div>
+                        </div>
+                        <div class="cats__branches-item-area">
+                            ЮГО-ЗАПАД (ДАЧНОЕ)
+                        </div>
+                    </a>
+                </div>
+                <div class="cats__filter-container">
+                    <div class="cats__filter">
+                        <div class="cats__filter-item">
+                            <div class="cats__filter-item-title">
+                                ВЫБЕРИТЕ СПЕЦИАЛИЗАЦИЮ ВРАЧА:
+                            </div>
+                            <select class="cats__filter-item-select selectType">
+                                <option value="0">-- Не выбрано --</option>
+                                <option value="1">
+                                    Ветеринарный врач-терапевт
+                                </option>
+                                <option value="2">
+                                    Ветеринарный врач-хирург
+                                </option>
+                                <option value="3">
+                                    Ветеринарный врач-травматолог
+                                </option>
+                                <option value="4">
+                                    Ветеринарный врач-окулист
+                                </option>
+                                <option value="5">
+                                    Ветеринарный врач-онкогол
+                                </option>
+                                <option value="6">
+                                    Ветеринарный врач-кардиолог
+                                </option>
+                            </select>
+                        </div>
+                        <div class="cats__filter-item">
+                            <div class="cats__filter-item-title">
+                                ВЫБЕРИТЕ ВРАЧА:
+                            </div>
+                            <select
+                                class="cats__filter-item-select selectDoctor"
+                            >
+                                <option value="0">-- Не выбрано --</option>
+                                <option value="1">
+                                    Кравцова Евгения Александровна
+                                </option>
+                                <option value="2">
+                                    Иванов Альберт Александрович
+                                </option>
+                                <option value="3">
+                                    Митяев Руслан Владимирович
+                                </option>
+                                <option value="4">
+                                    Дроздова Елена Владимировна
+                                </option>
+                                <option value="5">
+                                    Еременко Карина Ивановна
+                                </option>
+                                <option value="6">
+                                    Петров Алексндрв Сергеевич
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cats__filter-btn-holder">
+                        <a href="#" class="cats__filter-btn">
+                            ПОКАЗАТЬ РАСПИСАНИЕ
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cats__table-container">
+                    <div class="cats__table-info">
+                        <div class="cats__table-info-title">
+                            УСЛОВНЫЕ ОБОЗНАЧЕНИЯ:
+                        </div>
+                        <div class="cats__table-info-items">
+                            <div
+                                class="cats__table-info-item cats__table-info-item--booked"
+                            >
+                                <div class="cats__table-info-item-icon"></div>
+                                <div class="cats__table-info-item-text">
+                                    Только по записи, запись осуществляется
+                                    через колл-центр
+                                </div>
+                            </div>
+                            <div
+                                class="cats__table-info-item cats__table-info-item--free"
+                            >
+                                <div class="cats__table-info-item-icon"></div>
+                                <div class="cats__table-info-item-text">
+                                    Прием ведется в порядке очереди
+                                </div>
+                            </div>
+                            <div
+                                class="cats__table-info-item cats__table-info-item--days"
+                            >
+                                <div class="cats__table-info-item-icon"></div>
+                                <div class="cats__table-info-item-text">
+                                    Сутки
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats__table">
+                        <div class="cats__table-row cats__table-row--header">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <a
+                                    href="#"
+                                    class="cats__table-arrow cats__table-arrow--disabled cats__table-arrow--prev"
+                                >
+                                    &lt;&lt;
+                                </a>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-day cats__table-day--today"
+                                >
+                                    СЕГОДНЯ
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div class="cats__table-day">
+                                    15 АВГУСТА <br />
+                                    ВТ
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div class="cats__table-day">
+                                    16 АВГУСТА <br />
+                                    СР
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div class="cats__table-day">
+                                    17 АВГУСТА <br />
+                                    ЧТ
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div class="cats__table-day">
+                                    18 АВГУСТА <br />
+                                    ПТ
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-day cats__table-day--weekend"
+                                >
+                                    19 АВГУСТА <br />
+                                    СБ
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-day cats__table-day--weekend"
+                                >
+                                    20 АВГУСТА <br />
+                                    ВС
+                                </div>
+                            </div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <a
+                                    href="#"
+                                    class="cats__table-arrow cats__table-arrow--next"
+                                >
+                                    &gt;&gt;
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">00:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--days"
+                                >
+                                    <div class="cats__table-record-time">
+                                        00:00-10:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Чурина Надежда Юрьевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-стоматолог
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        00:00-20:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Фёдорова Юлия Олеговна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-офтальмолог
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">00:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">01:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">01:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">02:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">02:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">03:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">03:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">04:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">04:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">10:00</div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--days"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">10:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">14:00</div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">14:00</div>
+                            </div>
+                        </div>
+                        <div class="cats__table-row">
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">20:00</div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--days"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cats__table-column"></div>
+                            <div class="cats__table-column">
+                                <div
+                                    class="cats__table-record cats__table-record--free"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                                <div
+                                    class="cats__table-record cats__table-record--booked"
+                                >
+                                    <div class="cats__table-record-time">
+                                        20:00-06:00
+                                    </div>
+                                    <div class="cats__table-record-name">
+                                        Михайлова Ксения Евгеньевна
+                                    </div>
+                                    <div class="cats__table-record-post">
+                                        Ветеринарный врач-терапевт
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="cats__table-column cats__table-column--aside"
+                            >
+                                <div class="cats__table-time">20:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </secion>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.js"
+            integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./assets/plugins/select2/js/select2.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
